@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn btn--info">ℹ️</button>
+      <div class="modal">
+        <button class="close-modal">&times;</button>
+        <h1>roll the dice</h1>
+        <br />
+        <h3>Please check the rules of the game!</h3>
+        <br />
+        <p>
+          This is a simple game called "Roll The Dice". It's designed for two
+          players, which fun to play. You must roll the dice and if you press
+          the "HOLD" button the value of the dice will become your point. You
+          can keep rolling or hold several points in your storage. Winner 🥇 is
+          who will collect 100 points or more.
+          <br />
+          <span>Important:</span> During the dice rolling, if player rolled "X"
+          the current score will be lost and turn will end. Then it's will come
+          time to roll next player.
+        </p>
+        <br />
+        <p>
+          To start the game please click the button "ROLL DICE" and enjoy for
+          playing.
+        </p>
+      </div>
+      <div class="overlay"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
